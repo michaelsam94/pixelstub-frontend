@@ -176,6 +176,13 @@ export function PlaceholderBuilder() {
           </article>
         </div>
       </section>
+
+      <footer className="site-footer">
+        Developed by{" "}
+        <a href="https://michaelsam94.tech" rel="author external">
+          michaelsam94
+        </a>
+      </footer>
     </main>
   );
 }
