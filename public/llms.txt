@@ -1,0 +1,30 @@
+# PixelStub
+
+PixelStub is a free, no sign-up placeholder image generator for creating custom dummy image URLs in the browser.
+
+Canonical site: https://pixelstub.pages.dev/
+
+## What PixelStub Does
+
+- Builds placeholder image URLs from width, height, background color, text color, text, and image format.
+- Supports common presets including Open Graph, square, widescreen, and avatar placeholders.
+- Supports PNG, JPG, JPEG, GIF, and WebP formats.
+- Uses a Cloudflare Worker API to validate placeholder specs and build deterministic upstream image URLs.
+
+## Useful Pages
+
+- App: https://pixelstub.pages.dev/
+- Sitemap: https://pixelstub.pages.dev/sitemap.xml
+- GitHub frontend: https://github.com/michaelsam94/pixelstub-frontend
+- GitHub backend: https://github.com/michaelsam94/pixelstub-backend
+
+## Common Questions
+
+What is PixelStub?
+PixelStub is an online placeholder image generator for developers, designers, and technical writers.
+
+Does PixelStub require an account?
+No. PixelStub does not require sign-up for placeholder image URL generation.
+
+Can PixelStub create a 600x400 placeholder?
+Yes. Set width to 600 and height to 400, then choose colors, format, and optional text.

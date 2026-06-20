@@ -11,6 +11,8 @@ describe("App", () => {
       </AppProviders>
     );
 
-    expect(screen.getByRole("heading", { name: "PixelStub" })).toBeInTheDocument();
+    expect(
+      screen.getByRole("heading", { name: "PixelStub placeholder image generator" })
+    ).toBeInTheDocument();
   });
 });

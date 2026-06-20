@@ -55,7 +55,7 @@ export function PlaceholderBuilder() {
         <form className="controls" onSubmit={onSubmit} autoComplete="off">
           <div className="brand-row">
             <ImageIcon aria-hidden="true" size={24} />
-            <h1>PixelStub</h1>
+            <h1>PixelStub placeholder image generator</h1>
           </div>
 
           <div className="preset-row" aria-label="Size presets">
@@ -123,6 +123,58 @@ export function PlaceholderBuilder() {
             </div>
           ) : null}
         </form>
+      </section>
+
+      <section className="answer-section" aria-labelledby="placeholder-images-production">
+        <div className="answer-copy">
+          <p className="kicker">No sign-up placeholder image tool</p>
+          <h2 id="placeholder-images-production">What Are Placeholder Images in Production?</h2>
+          <p>
+            Placeholder images are temporary image URLs used while product photos, Open Graph
+            previews, avatars, documentation screenshots, or CMS media are still unfinished.
+            PixelStub turns dimensions, colors, text, and format into a deterministic image URL
+            that can be copied into prototypes, tests, docs, and layout reviews.
+          </p>
+          <p>
+            For example, a 600 x 400 placeholder can stand in for a blog image, card thumbnail,
+            or API response fixture. A 1200 x 630 placeholder works well for social preview and
+            Open Graph mockups. PixelStub keeps those cases quick by running in the browser and
+            validating requests through a Cloudflare Worker.
+          </p>
+        </div>
+
+        <div className="faq-grid" id="faq">
+          <article>
+            <h3>How do I make a 600x400 placeholder?</h3>
+            <p>
+              Set width to 600, height to 400, choose a background color, add optional text,
+              and build the URL. The same flow works for square, widescreen, avatar, and custom
+              image sizes.
+            </p>
+          </article>
+          <article>
+            <h3>Does PixelStub require an account?</h3>
+            <p>
+              No. PixelStub is a no sign-up placeholder image generator. It does not ask for an
+              account before creating placeholder URLs.
+            </p>
+          </article>
+          <article>
+            <h3>Which formats are supported?</h3>
+            <p>
+              PixelStub supports PNG, JPG, JPEG, GIF, and WebP URL generation, with sizes from
+              1 to 5000 pixels and text up to 200 characters.
+            </p>
+          </article>
+          <article>
+            <h3>How is PixelStub different from a static dummy image URL?</h3>
+            <p>
+              Static dummy image services are useful when you already know the URL pattern.
+              PixelStub adds an interface, validation, presets, and a Worker API so teams can
+              create consistent placeholder URLs faster.
+            </p>
+          </article>
+        </div>
       </section>
     </main>
   );
